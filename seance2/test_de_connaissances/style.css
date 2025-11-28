@@ -1,0 +1,115 @@
+.container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    text-align: center;
+    gap: 1px;
+}
+/*.html:hover{
+    border: 5px solid gray;
+    transform: skew(1.1);
+    filter: blur(0.5px);
+}
+.css:hover{
+    border: 5px solid gray;
+}
+/*.js:hover{
+    transform: skew(3deg);
+    border: 5px solid gray;
+}
+    */
+
+h1{
+    text-align: center;
+}
+fieldset{
+    width: 250px;
+    margin-left: 25%;
+}
+#containere{
+    text-align: center;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+    color: black;
+    transition: 0.3s ease;
+}
+body.dark{
+    background: #121212;
+    color: white;
+}
+button[id = toggle]{
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #000;
+    color: #fff;
+}
+
+.html1{
+    font-size: 18;
+    padding: 2%;
+    margin: 2%;
+}
+.css1{
+    font-size: 18;
+    padding: 2%;
+    margin: 2%;
+}
+.js1{
+    font-size: 18;
+    padding: 2%;
+    margin: 2%;
+}
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #000;
+    color: #fff; 
+}
+h1 ~ p {
+    text-align: center;
+}
+body{
+    width: 65%;
+    font-size:1em;
+    padding-left: 15%;
+    line-height: normal;
+    height: 50%;
+}
+header button{
+    text-align: right;
+}
+
+@media screen and (max-width : 768px) {
+   body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 100px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+   }
+   .container{
+    display: flex;
+    flex-direction: column;
+   }
+   input{
+    text-align: center;
+   }
+}
+form{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}

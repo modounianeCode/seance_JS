@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Test de connaissances</title>
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<body id="toggle">
+    <main>
+    <header>
+    <button id="mod" onclick="changemodes()">mode sombre</button>
+    <button id="mode" onclick="changemodec()">mode clair</button>
+    <h1 id="titre" onmouseover="changeTitre()">Developpement web front-end</h1>
+    <p>Le Developpement web est un domaine tres vaste ou on a plusieurs 
+        choses à apprendre et plusieurs specialités dont le full-stack, le back-end et le 
+        <i>front-end</i>. <br> Ce dernier, qui est le theme d'aujourd'hui nous permet de faire beaucoup 
+        de choses notamment la responsivite, le style, le dynamisme d'un site ou d'une 
+        application. <br>
+        Les principaux langages de ce domaine que nous allons aborder sont 
+        le <abbr title="Hyper Text Markup Language">HTML</abbr>, 
+        le <abbr title="Cascading style sheets">CSS</abbr> et le <abbr title="JavaScript">JS</abbr>
+    </p>
+    </header>
+    <section>
+    <div class="container">
+        <article>
+    <div class="html1">
+        <h2 >HTML</h2>
+        <img src="images/html.png" width="200" height="200" id="h" alt="" onmouseover="changelogo()">
+        <p>Le le <abbr title="Hyper Text Markup Language">HTML</abbr> est le langage de balisage hyper text qui nous permet de <br>
+            de structurer le contenu de note page web en utilisant des balises paires et des balises orphelines</p>
+    </div>
+    </article>
+    <article>
+    <div class="css1">
+        <h2 id="c">CSS</h2>
+        <img src="images/css.png" width="200" height="200" alt="" id="cs" alt="" onmouseover="changelogo1()">
+        <p>le <abbr title="Cascading style sheets">CSS</abbr> est le langage qui permet de styliser la page. <br> En d'autres termes, il permet d'ajoutrer des couleurs, des marges, des bordures etc.
+            Il utilise des selecteurs (balise, class, id) , des proprietes(color, background-color, padding, margin, ...) et des valeurs(red, green, 180px, ... ).
+        </p>
+    </div>
+    </article>
+    <article>
+    <div class="js1">
+        <h2 id="j">JS</h2>
+        <img src="images/js.png" width="200" height="200" alt="" id="je" alt="" onmouseover="changelogo2()">
+        <p>le <abbr title="JavaScript">JS</abbr> est le langage qui rend nos pages web interactifs en utilisant des fonctions et plusieurs evenements notamment onclick, onsubmit, etc.</p>
+    </div>
+    </article>
+    </div>
+    <div id="containere">
+        <button onclick="fin()">Mot de fin</button>
+    </div>
+    <br>
+    <fieldset>
+    <form action="" method="post" onsubmit = "return afficher()">
+        <label for="nom">Entrer votre nom : <input type="text" id="nom" required ></label> <br>
+        <label for="prenom">Entrer votre prenom : <input type="text" id="prenom" ></label><br>
+        <label>Sugestions ou questions </label><br><textarea cols="100" rows="10" name="" id="" placeholder="Entrer votre question"></textarea><br> 
+        <input type="submit" value = "soumettre" >
+        <input type="reset" value = "reinitialiser">
+    </form>
+    </fieldset>
+    </section>
+    <footer >
+        <button onclick="changeback()">Changer le fond de la page</button>
+    </footer>
+    </main>
+
+</body>
+</html>

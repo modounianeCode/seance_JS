@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="../seance2/formation.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Allah is the almighty</h1>
+    <h1 id="un">Allah is the almighty</h1>
+    <button onclick="classe()">Changement par id</button>
     <h2 id="test">We are a slave of Allah</h2>
-    <button onclick="afficher()">Afficher</button>
+    <button onclick="afficher()">Changement par un id</button>
     <h3 class="best">You are the best</h3>    
-    <div class="best">
+    <div class="beste">
         <h1>Bestiole</h1>
     </div>
     <button onclick="useClass()">Utiliser la classe</button>
-    <p>Selection par un selecteur</p>
+    <p >Selection par un selecteur</p>
     <button onclick="selecteurCSS()">Afficher selecteur css et modifier le contenu</button>
     <p id="contenu">Pourquoi le dejeuner se fait durant le matin</p>
     <button onclick="modifHTML()">Modifier le html</button>
     <hr>
     <img src="../seance2/images/pack.png" alt="photo" id="img"><br>
     <button onclick="changeImg()">Changer la photos</button>
+    <p id="diallo">Mr diallo est notre professeur de base de donnee</p>
+    <button onfocus="soumettre()">Changement</button>
+    <h2>Creation d'elements dans le DOM</h2>
+        <p></p>
+        <button onclick="creation()">creer</button>
+            <div id="dom" >
+                
+            </div>
 </body>
 </html>
