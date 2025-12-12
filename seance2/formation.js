@@ -46,5 +46,6 @@ const container = document.getElementById('dom');
 const p = document.createElement('p');
 p.textContent = 'je suis un etudiant';
 container.appendChild(p);
-p.style.color ='green';                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+p.style.color ='green'; 
+p.style.fontSize = '20px';                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
 }

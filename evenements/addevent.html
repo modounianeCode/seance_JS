@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="monbouton">Cliquez-moi</button>
+    <p  id="conteneur">
+
+    </p>
+    <script>
+        var bouton = document.getElementById("monbouton");
+        bouton.addEventListener('click',function(){
+        const p1 = document.getElementById("conteneur");
+       // innerHTML="Danger";
+       p1.textContent="DANGER";
+       bouton.appendChild(p1);
+       p1.style.color="red";
+        alert(p1);
+        })
+        
+    </script>
+</body>
+</html>

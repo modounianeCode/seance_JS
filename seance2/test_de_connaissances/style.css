@@ -86,8 +86,10 @@ body{
 header button{
     text-align: right;
 }
-
-@media screen and (max-width : 768px) {
+h2 ~ img{
+    padding: 5px;
+}
+@media screen and (max-width : 768px){
    body{
     display: flex;
     flex-direction: column;
@@ -108,8 +110,23 @@ header button{
     text-align: center;
    }
 }
-form{
-    display: flex;
-    gap: 5px;
-    flex-direction: column;
+#fond{
+    padding: 10px 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: blue;
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-20%);
+        background-color: blue;
+    }
+    50%{
+        transform: translateX(0);
+        background-color: green;
+    }
+    100%{
+        transform: translateX(30%);
+        background-color: red;
+    }
 }
