@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="keyinput" placeholder="Appuyez une touche">
+    <script>
+        var input=document.getElementById("keyinput");
+        input.addEventListener("keydown", function(event){
+            console.log("Touche appuyee: "+event.key);
+            console.log("Code de la touche: "+event.code);
+        });
+        input.addEventListener("keyup", function(event){
+            console.log("Touche relachee: "+event.key);
+        });
+        
+    </script>
+</body>
+</html>

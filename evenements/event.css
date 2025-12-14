@@ -1,0 +1,27 @@
+body{
+    background:linear-gradient(to right,gray,white);
+}
+@keyframes slide{
+    0%{
+        transform: translateX(-25px);
+        background-color: lightblue;
+    }
+    25%{
+        transform: translateX(25px);
+        background-color: lightgreen;
+    }
+    100%{
+        transform: translateX(100%);
+        background-color: lightpink;
+    }
+}
+#but{
+    padding:10px;
+    font-size:20px;
+    background-color:black;
+    border: 2px solid white;
+    border-radius:5px;
+    color:white;
+    cursor: pointer;
+    margin-left: 100vh;
+}

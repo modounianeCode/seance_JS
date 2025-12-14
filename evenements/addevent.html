@@ -4,23 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="event.css">
 </head>
 <body>
-    <button id="monbouton">Cliquez-moi</button>
-    <p  id="conteneur">
-
-    </p>
+    <h1 id="test">Formulaire de test</h1>
+    <fieldset>
+        <legend>formulaire d'inscription</legend>
+        <form action="" method="" onsubmit=" validateForm()">
+        <label for="tur">Entrer votre nom : <input type="text" id="tur" required></label> <br> <br>
+        <label for="sant">Entrer votre prenom : <input type="text" id="sant"></label> <br> <br>
+        <label for="password">Entrer votre mot de passe : <input type="password" id="password1"></label><br><br>
+        <label for="password">Entrer votre mot de passe a nouveau: <input type="password" id="password2"></label><br><br>
+        <label for="date">Entrer votre date de naissance : <input type="date" id="date"></label> <br> <br>
+        <label for="email">Entrer votre email : <input type="email" id="email"></label> <br> <br>
+        <label for="tel">Entrer votre numero de telephone : <input type="tel" id="tel"></label> <br> <br>
+        <label for="photo">Inserer votre photo : <input type="file"></label><br><br>
+        <button id="btn">Envoyer</button>
+        <button id="btn1">Reinitialiser</button>
+        </form>
+    </fieldset>
+    <br><hr>
+    <button id="but">Cliquez-moi</button>
+    <br><hr>
+    <div id="madiv">
+        <p>Ajout du tableau</p>
+    </div>
+    <br><hr>
+    <div id="mydiv" onmouseover="this.style.backgroundColor='red'">Passer la souris sur meme</div>
     <script>
-        var bouton = document.getElementById("monbouton");
-        bouton.addEventListener('click',function(){
-        const p1 = document.getElementById("conteneur");
-       // innerHTML="Danger";
-       p1.textContent="DANGER";
-       bouton.appendChild(p1);
-       p1.style.color="red";
-        alert(p1);
-        })
-        
+    
+    var liste=document.getElementById("madiv");
+    let tab=document.createElement("table");
+    tab.border="1";
+    for(let i=0;i<4;i++){
+        let ligne=document.createElement("tr");
+        for(let j=0;j<4;j++){
+            let cell=document.createElement("td");
+            cell.innerHTML=`ligne ${i+1} cellule ${j+1}`;
+            ligne.appendChild(cell);
+        }
+        tab.appendChild(ligne);
+    }
+    liste.appendChild(tab);
+    console.log(tab);
+    var but = document.getElementById("but");
+    but.addEventListener('click',function(e){
+        console.log(e.clientX,e.clientY);
+    });
+    but.addEventListener('dblclick',function(){
+        alert("Double clique detecte");
+    });
+    but.addEventListener('mouseover',function(){
+        but.style.backgroundColor="green";
+    });
+    function validateForm(){
+    }
+    let key=document.getElementById("test");
+    key.addEventListener("mouseover", function(){
+        key.style.color="blue";
+        key.style.backgroundColor="yellow";
+        key.style.padding="10px";
+        key.style.animation="slide 0.5s ease-in-out linear";
+    });
+    key.addEventListener("mouseout", function(){
+        key.style.color="black";
+        key.style.backgroundColor="white";
+    });
     </script>
 </body>
 </html>
